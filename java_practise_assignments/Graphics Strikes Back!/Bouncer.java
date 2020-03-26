@@ -1,6 +1,6 @@
 import java.awt.Graphics;
 
-public class Bouncer {
+public class Bouncer implements Mover{
     private int x;
     private int y;
     private int xDirection;
@@ -11,7 +11,7 @@ public class Bouncer {
     public Bouncer(int startX, int startY, Sprite sprite) {
         x = startX;
         y = startY;
-        this.sprite = sprite; 
+        this.sprite = sprite;
     }
 
     /** Starts moving the object in the direction (xIncrement, yIncrement). */
