@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /** Displays a window and delegates drawing to DrawGraphics. */
-public class SimpleDraw extends JPanel implements Runnable {    
+public class SimpleDraw extends JPanel implements Runnable {
     private static final long serialVersionUID = -7469734580960165754L;
     private boolean animate = true;
     private final int FRAME_DELAY = 50; // 50 ms = 20 FPS
@@ -18,7 +18,7 @@ public class SimpleDraw extends JPanel implements Runnable {
     public static final int HEIGHT = 300;
     private DrawGraphics draw;
 
-    
+
     public SimpleDraw(DrawGraphics drawer) {
         this.draw = drawer;
     }
@@ -65,7 +65,7 @@ public class SimpleDraw extends JPanel implements Runnable {
         final SimpleDraw content = new SimpleDraw(new DrawGraphics());
 
         JFrame frame = new JFrame("Graphics!");
-       
+
         Color bgColor = Color.white;
         frame.setBackground(bgColor);
         content.setBackground(bgColor);
@@ -86,4 +86,4 @@ public class SimpleDraw extends JPanel implements Runnable {
 
         frame.setVisible(true);
     }
-} 
+}
